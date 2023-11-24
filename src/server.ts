@@ -1,11 +1,9 @@
 import express, { NextFunction } from "express";
 import { Router, Request, Response } from "express";
 import UserController from "../src/controllers/UserController";
-import { PrismaClient } from '@prisma/client'
 
 var  cors  = require ('cors') 
 const app = express();
-const prisma = new PrismaClient()
 
 app.use(cors())
 
